@@ -1,0 +1,228 @@
+/*
+ * Globals
+ */
+
+/*Colors*/
+
+:root {
+    --main-color1:#1a1a1d;
+    --main-color2:#4e4e50;
+    --main-color3:#6f2232;
+    --main-color4:#950740;
+    --main-color5:#c3073f;
+}
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  text-decoration: none;
+  color: var(--main-color2);
+}
+
+/* Custom default button */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritance from `body` */
+  background-color: #c5c6c7;
+  margin-top: 4rem;
+  border: .05rem solid #c5c6c7;
+}
+
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  /*white-space: pre-line;*/
+  height: 100%;
+  background-color: var(--main-color1);
+}
+
+body {
+  display: -ms-flexbox;
+  display: flex;
+  color: #c5c6c7;
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+  /*box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);*/
+}
+
+.display-5{
+  color: #c5c6c7;
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+}
+
+.my-2{
+  border: 0.05rem;
+  border-color: var(--main-color2);
+  border-style:solid;
+}
+
+.ctext{
+  .display-5;
+  color: var(--main-color4);
+}
+
+.text{
+  .display-5;
+  color: #c5c6c7;
+}
+
+.link{
+  color: #000;
+}
+
+.card{
+  background-color: var(--main-color1);
+}
+
+.jumbotron{
+  background-color: var(--main-color1);
+  width: 100%;
+  border: 2px;
+  border-color: var(--main-color4);
+  border-style:solid;
+}
+
+.cover-container {
+  /*max-width: 42em;*/
+  position: relative;
+}
+
+.list-group-item {
+background-color: transparent;
+border-top: 1px solid #ddd;
+border-radius: 0;
+color: #c5c6c7;
+border: 5px;
+border-color: var(--main-color2);
+border-style:solid;
+}
+
+.alert {
+  margin-top: 1rem;
+  margin-bottom: 0rem;
+  color: #000;
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .0);
+}
+
+.badge {
+  color: #000;
+  border-color: var(--main-color4);
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .2);
+}
+
+/*  #menu ul, #menu li {
+    margin: 0; padding: 0;
+}*/
+
+/*
+ * Header
+ */
+.masthead {
+  margin-bottom: 2rem;
+}
+
+.masthead-brand {
+  margin-bottom: 0;
+}
+
+.nav-masthead .nav-link {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  padding: .25rem 0;
+  font-weight: 700;
+  /*color: rgba(255, 255, 255, .5);*/
+  color: var(--main-color3);
+  background-color: transparent;
+  /*border-bottom: .25rem solid transparent;*/
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  /*border-bottom-color: rgba(255, 255, 255, .25);*/
+  /*color: rgba(255, 255, 255, .75);*/
+  color: var(--main-color4);
+}
+
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 2rem;
+}
+
+.nav-masthead .active {
+  color: var(--main-color5);
+  border-bottom-color: #c5c6c7;
+}
+
+@media (min-width: 48em) {
+  .masthead-brand {
+    float: center;
+  }
+  .nav-masthead {
+    float: center;
+  }
+}
+
+
+.bg {
+  /* The image used */
+/*  background-image: url('../../images/bg.jpg');
+*/
+  /* Full height */
+  height: 100%;
+  width: 100%;
+
+  position: absolute;
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+
+/*
+ * Cover
+ */
+/*.cover {
+  color: rgb(255, 255, 255);
+  position: relative;
+  min-height: 350px;
+  background: url("test.jpg") no-repeat scroll 0px 100% / cover transparent;
+  padding: 0 1.5rem;
+}*/
+.cover .btn-lg {
+  padding: .75rem 1.25rem;
+  font-weight: 700;
+}
+
+
+/*
+ * Footer
+ */
+.mastfoot {
+  color: rgba(255, 255, 255, .5);
+}
